@@ -1,30 +1,27 @@
-<h1>Grades Screen </h1>
+
 
 <html>
 
     <head>
         <title>Student Grades</title>
         <style>
-            .float-container {
-                display: flex;
+            .small-input {
+              width: 50;
+              text-align: center;
             }
-    
-            .float-child {
-                padding: 10px;
-            }
-        </style>
+          </style>
+          
+          
 
     </head>
 
     <body>
-            <div class="float-container">
-                <div class="float-child">
-                    <div class="1">
-                        <table>
+           
+        <table border="1" width="100%">
                             <tr valign="baseline">
                                 <!-- first col -->
-                                <td>
-                                 <ul>
+                            <td>
+                                <ul>
                                    
                                 <li> <a href="/Kanbas/Account/Profile/screen.html ">Account</a></li>
                                 <li><a href="#"> Dashboard </a></li> 
@@ -41,7 +38,7 @@
                             <!-- second col -->
                             <td>
                                 <ul>
-                                    <li><a href="/Kanbas/Courses/Home/screen.html">Home</a>
+                                    <li><a href="/Kanbas/Courses/Home/screen.html">Course Home</a>
                                     <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
                                     <li><a href="#">Piazza</a></li>
                                     <li><a href="#">Zoom Meetings</a></li>
@@ -58,23 +55,15 @@
                                     <li><a href="#">Outcomes</a></li>
                                     <li><a href="#">Collaborations</a></li>
                                     <li><a href="#">Syllabus</a></li>
-                                    <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+                                    <li><a href="/Kanbas/Courses/Settings/screen.html">Course Settings</a></li>
 
 
 
                                 </ul>
                             </td>
-                            </tr>
-                        </table>
+                           
 
-
-                    </div><!--closing 1 -->
-                </div><!--closing child -->
-
-                <div class="float-child">
-
-                    <div class="2">
-
+<td>
                         <select name="select one">
                             <option value="Gradebook">Gradebook</option>
                         </select>
@@ -93,9 +82,9 @@
                         </label>
                         <br><br>
                         <button>Apply Filters</button>
-                        <br>
+                        <br><br>
             
-                        <table border ="1" width="100%">
+                        <table border =".25" width="100%">
                         <thead>
                         <tr>
                             <th>Student Name</th>
@@ -112,36 +101,25 @@
                         </thead>
             
                         <tbody>
-                            <tr>
-                                <td>Alice Wonderland</td>
-                                <td>98</td>
-                                <td>89</td>
-                                <td>87</td>
-                                <td>90</td>
-                                <td>89</td>
-                                <td>94</td>
-                                <td>88</td>
-                                <td>87</td>
-                                <td>100</td>
+                            
             
-                            </tr>
-            
-                            <tr>
+                            <tr class="small-input">
                                 <td>Alice Wonderland</td>
-                                <td>98</td>
-                                <td>89</td>
-                                <td>87</td>
-                                <td>90</td>
-                                <td>89</td>
-                                <td>94</td>
-                                <td>88</td>
-                                <td>87</td>
-                                <td>100</td>
+                                <td><input type="number" max="100" value="90" class="small-input" > </td>
+                                <td><input type="number" max="100" value="56" class="small-input" > </td>
+                                <td><input type="number" max="100" value="87" class="small-input" > </td>
+                                <td><input type="number" max="100" value="90" class="small-input"> </td>
+                                <td><input type="number" max="100" value="89" class="small-input"> </td>
+                                <td><input type="number" max="100" value="94" class="small-input"> </td>
+                                <td><input type="number" max="100" value="88" class="small-input"> </td>
+                                <td><input type="number" max="100" value="87" class="small-input"> </td>
+                                <td><input type="number" max="100" value="100" class="small-input"> </td>
+
             
                             </tr>
             
             
-                            <tr>
+                            <tr class="small-input">
                                 <td>Princes Leia</td>
                                 <td>98</td>
                                 <td>80</td>
@@ -155,7 +133,7 @@
             
                             </tr>
             
-                            <tr>
+                            <tr class="small-input">
                                 <td>Luke Skywalker</td>
                                 <td>99</td>
                                 <td>88</td>
@@ -169,7 +147,7 @@
             
                             </tr>
             
-                            <tr>
+                            <tr class="small-input">
                                 <td>Han Solo</td>
                                 <td>83</td>
                                 <td>99</td>
@@ -184,7 +162,7 @@
                             </tr>
             
             
-                            <tr>
+                            <tr class="small-input">
                                 <td>Lando Calresian</td>
                                 <td>83</td>
                                 <td>92</td>
@@ -199,7 +177,7 @@
                             </tr>
             
             
-                            <tr>
+                            <tr class="small-input">
                                 <td>Boba Fet</td>
                                 <td>85</td>
                                 <td>89</td>
@@ -214,7 +192,7 @@
                             </tr>
             
             
-                            <tr>
+                            <tr class="small-input">
                                 <td>Darth Vader</td>
                                 <td>81</td>
                                 <td>81</td>
@@ -230,7 +208,7 @@
             
             
             
-                            <tr>
+                            <tr class="small-input">
                                 <td>Obi-Wan Kenobi</td>
                                 <td>85</td>
                                 <td>99</td>
@@ -246,7 +224,7 @@
             
             
             
-                            <tr>
+                            <tr class="small-input">
                                 <td>R2-D2</td>
                                 <td>81</td>
                                 <td>92</td>
@@ -262,7 +240,7 @@
             
             
             
-                            <tr>
+                            <tr class="small-input">
                                 <td>C-3PO</td>
                                 <td>94</td>
                                 <td>98</td>
@@ -277,7 +255,7 @@
                             </tr>
             
             
-                            <tr>
+                            <tr class="small-input">
                                 <td>Yoda</td>
                                 <td>80</td>
                                 <td>89</td>
@@ -291,7 +269,7 @@
             
                             </tr>
             
-                            <tr>
+                            <tr class="small-input">
                                 <td>Admiral Ackbar</td>
                                 <td>82</td>
                                 <td>88</td>
@@ -312,12 +290,6 @@
             
             
                         </table>
-
-                    </div> <!--closing 2 -->
-                </div> <!--closing child -->
-
-                
-            </div><!--closing main -->
 
 
 
