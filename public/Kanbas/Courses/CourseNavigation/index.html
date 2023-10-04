@@ -1,137 +1,458 @@
-
 <html>
 
 <head>
-   
+
+    <link href="/Kanbas/Account/Profile/screen.css" rel="stylesheet" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+    <script src="https://kit.fontawesome.com/b303dc9fdb.js">
+
+    </script>
+
+    <link href="/Kanbas/Courses/Settings/index.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <link href="/Kanbas/Courses/Settings/index.css" rel="stylesheet" />
+
+
 </head>
 
 
 
 <body>
 
-    <table border="1" width="100%" style="padding-top: 10px;">
-        <tr valign="baseline">
-          <!-- first col -->
-          <td>
-            <ul>
-              <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="/Kanbas/Account/Profile/screen.html">Studio</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-          </td>
-      
-          <!-- second col -->
-          <td>
-            <ul>
-              <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-              <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-              <li><a href="#">Piazza</a></li>
-              <li><a href="#">Zoom Meetings</a></li>
-              <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-              <li><a href="#">Quizzes</a></li>
-              <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-              <li><a href="#">People</a></li>
-              <li><a href="#">Panopto Video</a></li>
-              <li><a href="#">Discussions</a></li>
-              <li><a href="#">Announcements</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Rubrics</a></li>
-              <li><a href="#">Outcomes</a></li>
-              <li><a href="#">Collaborations</a></li>
-              <li><a href="#">Syllabus</a></li>
-              <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-            </ul>
-          </td>
-      
-          <!-- third col -->
-          <td>
-            <span style="font-weight: bold;">Drag and drop items to reorder them in course the navigation.</span><br>
-            <ul>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-            <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-            <li><a href="#">Piazza</a></li>
-            <li><a href="#">Zoom Meetings</a></li>
-            <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-            <li><a href="#">Quizzes</a></li>
-            <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Panopto Video</a></li>
-            <li><a href="#">Discussions</a></li>
-            <li><a href="#">Announcements</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Rubrics</a></li>
-            <li><a href="#">Outcomes</a></li>
-            <li><a href="#">Collaborations</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
 
-<br><br>
-<span style="font-weight: bold;">Drag items here to hide them from students.</span><br>
-<span style="color: gray;">Disabling most pages will cause students who visit those pages to be redirected to the course home page.</span>
-<br>
+    <div class="wd-flex-row-container">
 
-<li><a href="#">Chat</a>
-    <br><span style="color: gray;">Page disabled</span></li>
 
-<li><a href="#">SCORM</a>
-    <br><span style="color: gray;">Page disabled</span></li>
+        <div> <!--kanbas nav-->
+            <ul class="kanbas-navigation" style="height: 100%;">
 
-<li><a href="#">Attendance</a>
-    <br><span style="color: gray;">Page disabled</span></li>
 
-<li><a href="#">Barnes and Noble Bookstore</a>
-    <br><span style="color: gray;">Page disabled</span></li>
+                <li>
+                    <img src="/NU Logo.png" style="height: 58px; width: 58px;">
+                </li>
 
-<li><a href="#">Top Hat</a>
-    <br><span style="color: gray;">Page disabled</span></li>
+                <li>
 
-<li><a href="#">Syllabus</a>
-    <br><span style="color: gray;">Page disabled</span></li>
+                    <a href="/Kanbas/Account/Profile/screen.html"> <i class="fa fa-user fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>Account</a>
+                </li>
 
-    <li><a href="#">Perusall</a>
-        <br><span style="color: gray;">Page disabled</span></li>
 
-<li><a href="#">MS Teams Meeting</a>
-    <br><span style="color: gray;">Page disabled</span></li>
+                <li>
 
-<li><a href="#">FACT Reporting and Photo Roster</a>
-    <br><span style="color: gray;">Page disabled</span></li>
 
-<li><a href="#">Progress Reports (Navigate)</a>
-    <br><span style="color: gray;">Page disabled</span></li>
 
-<li><a href="#">MS Teams for Canvas</a>
-    <br><span style="color: gray;">Page disabled</span></li>
+                    <a href="/Kanbas/Dashboard/dashboard.html"> <i class="fa fa-window-maximize fa-2x"
+                            aria-hidden="true" style="display: block; margin: 0 auto;"></i> Dashboard </a>
+                </li>
 
-<li><a href="#">VHL Central</a>
-    <br><span style="color: gray;">Page disabled</span></li>
 
-<li><a href="#">Gradescope 1.3</a>
-    <br><span style="color: gray;">Page disabled</span></li>
 
-<li><a href="#">Credentials</a>
-    <br><span style="color: gray;">Page disabled</span></li>
+                <li class="wd-active">
+                    <a href="/Kanbas/Courses/Home/screen.html" class="wd-active"> <i class="fa fa-book fa-2x"
+                            aria-hidden="true" style="display: block; margin: 0 auto;"></i>
+                        Courses </a>
+                </li>
 
-<li><a href="#">iClicker</a>
-    <br><span style="color: gray;">Page disabled</span></li>
+
+                <li>
+                    <a href="#"><i class="fa fa-calendar fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>Calendar</a>
+                </li>
+
+
+
+                <li>
+
+                    <a href="#"><i class="fa fa-inbox fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i> Inbox </a>
+                </li>
+
+
+                <li>
+                    <a href="#"> <i class="fa fa-undo fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>
+                        History </a>
+                </li>
+
+
+                <li>
+
+                    <a href="#"><i class="fa fa-window-restore fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>
+                        Studio</a>
+                </li>
+
+                <li>
+
+                    <a href="#"> <i class="fa fa-question fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>
+                        Help </a>
+                </li>
+
 
             </ul>
-           
-            <button type="submit" style="text-align: right;">Save</button>
 
-          </td>
-        </tr>
-      </table>
-      
-    
-    <br>
+        </div> <!--kanbas navbar close-->
+
+
+
+
+        <!--second col>-->
+
+
+        <div class="col wd-navbar">
+            <div class="row" style="width: 100%;">
+
+                <div class="col">
+                    <!--second nav-->
+                    <nav style="--bs-breadcrumb-divider:  '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb wd-course-header" style="padding-top: 10px; padding-left: 10px; ">
+                            <i class="fa fa-bars" style="color: #C51E3A;padding-right: 20px; font-size: 25px;"
+                                aria-hidden="true"></i>
+                            <li class="breadcrumb-item">CS5610 Web Programming</li>
+                            <li class="breadcrumb-item">Fall 2023</li>
+                            <li class="breadcrumb-item">Section 2</li>
+                            <li class="breadcrumb-item active" aria-current="page"><a
+                                    href="/Kanbas/Courses/Home/screen.html">Course</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a
+                                    href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="#"
+                                    style="color: red;">Navigation</a></li>
+
+
+                        </ol>
+                    </nav>
+
+                </div>
+
+
+                <div class="col float-end">
+                    <button type="button" class="btn btn-primary float-end m-1 p-2"
+                        style="color:  #333333;background-color:  azure; border:  #333333 solid 1px; ">
+                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                        Student View</button>
+                </div>
+
+            </div>
+            <hr>
+
+
+
+            <div class="wd-flex-row-container">
+
+                <!--second nav here-->
+                <div class="second-navigation" style="width: 180px;">
+
+
+                    <ul style="padding: 10px; margin-left: 10px; width: 190px; color: red; ">
+
+
+
+                        <a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                        <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades </a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a></li>
+                        <li><a href="#">Announcements <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a></li>
+                        <li><a href="#">Pages <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a> </li>
+                        <li><a href="#">Files <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a></li>
+                        <li><a href="#">Rubrics <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a></li>
+                        <li><a href="#">Outcomes <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a></li>
+                        <li><a href="#">Collaborations <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a></li>
+                        <li><a href="#">Syllabus <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a></li>
+                        <li class="wd-active"><a href="/Kanbas/Courses/Settings/screen.html"
+                                class="wd-active">Settings</a></li>
+
+
+
+
+                    </ul>
+                </div> <!--closing second-->
+
+                <div class="col">
+                    <!--course nav bar-->
+                    <div class="py-4">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link" style="text-decoration: none; color:red;"
+                                    href="/Kanbas/Courses/Home/screen.html">Course Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="text-decoration: none; color: red;" href="#">Sections</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" style="text-decoration: none; color: black;"
+                                    href="/Kanbas/Courses/CourseNavigation/index.html">Navigation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="text-decoration: none; color: red;" href="#">Apps</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="text-decoration: none; color: red;" href="#">Feature
+                                    Options</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="text-decoration: none; color: red;" href="#">Integrations</a>
+                            </li>
+                        </ul>
+
+
+                    </div> <!--course nav bar close-->
+
+
+                    <!--main content here-->
+                    <div style="width: 100%; margin-left: 50px;">
+
+
+                        <!-- third col -->
+                        <br>
+
+
+                        <p> Drag and drop items to reorder them in the course navigation </p>
+                        <ul class="list-group w-50">
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                Home
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                Modules
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                Piazza
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                Zoom Meetings
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                Assignments
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                Quizzes
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                Grades
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                People
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                Panopto Video
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                Discussions
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                Announcements
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                        </ul>
+                        <br>
+                        <h5> Drag items here to hide them from students</h5>
+                        <p style="color: darkgrey;"> Disabling most pages will cause students who visit those pages to
+                            be redirected to the course home page.</p>
+                        <ul class="list-group w-50">
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6>Chat</h6>
+                                    <small class="text-muted">Page disabled, won't appear in navigation</small>
+                                </div>
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6>SCORM</h6>
+                                    <small class="text-muted">Page disabled, won't appear in navigation</small>
+                                </div>
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6>Attendance</h6>
+                                    <small class="text-muted">Page disabled, won't appear in navigation</small>
+                                </div>
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6>Barnes and Nobles Bookstore</h6>
+                                    <small class="text-muted">Page disabled, won't appear in navigation</small>
+                                </div>
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6>Digication</h6>
+                                    <small class="text-muted">Page disabled, won't appear in navigation</small>
+                                </div>
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6>Top Hat</h6>
+                                    <small class="text-muted">Page disabled, won't appear in navigation</small>
+                                </div>
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6>Syllabus</h6>
+                                    <small class="text-muted">Page disabled, won't appear in navigation</small>
+                                </div>
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6>Microsoft Team Meetings</h6>
+                                    <small class="text-muted">Page disabled, won't appear in navigation</small>
+                                </div>
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6>FACT Reporting and Photo Roster</h6>
+                                    <small class="text-muted">Page disabled, won't appear in navigation</small>
+                                </div>
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6>Progress Reports (Navigate)</h6>
+                                    <small class="text-muted">Page disabled, won't appear in navigation</small>
+                                </div>
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6>Microsoft Teams for Canvas</h6>
+                                    <small class="text-muted">Page disabled, won't appear in navigation</small>
+                                </div>
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+
+
+                            <li
+                                class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6>Gradescope 1.3</h6>
+                                    <small class="text-muted">Page disabled, won't appear in navigation</small>
+                                </div>
+                                <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </li>
+
+                        </ul>
+
+                        <br>
+                        <button class="btn btn-danger" style="text-align: right;">Save</button>
+                    </div>
+                </div>
 
 </body>
 

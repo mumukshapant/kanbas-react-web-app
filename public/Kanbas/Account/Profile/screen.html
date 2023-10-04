@@ -1,75 +1,255 @@
 <html>
-    <head>
-        <title>Profile</title>
 
-      
+<head>
+    <title>Profile</title>
 
-    </head>
+    <link href="/Kanbas/Account/Profile/screen.css" rel="stylesheet" />
 
-    <body>
-        
-                    <table border="1" width="100%">
-                        <tr valign="baseline">
-                            <!-- first col -->
-                            <td>
-                             <ul>
-                                <li> <a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                                <li><a href="#"> Dashboard </a></li> 
-                                <li><a href="/Kanbas/Courses/Home/screen.html"> Courses </a></li>
-                                
-                       
-                                <li> <a href="#">Calendar</a></li>
-                                <li><a href="#"> Inbox </a></li> 
-                                <li> <a href="#"> History </a></li>
-                                <li> <a href="#">Studio</a></li>
-                                <li><a href="#"> Help </a></li> 
-                       
-                       
-                             </ul>
-                            </td>
-                        <!-- second col -->
-                        <td>
-                            <ul>
-                                <li>
-                                    <a href="/Kanbas/Account/Profile/screen.html">Account</a>
-                                </li>
-                                <li>
-                                        <a href="/Kanbas/Account/Profile/edit.html">Edit Profile</a>
-                                    </li>
-                                    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+    <script src="https://kit.fontawesome.com/b303dc9fdb.js"></script>
+    <link href="/Kanbas/Courses/Settings/index.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
 
 
 
-                                    <li><a href="/Kanbas/Account/Profile/Settings/settings.html">  Settings </a></li>
-                                <li><a href="#">  e Portfolios </a></li>
-                                <li><a href="#">  Shared Content </a></li>
-                                
-                               
-                            </ul>
-                        </td>
-             
-                <td style="padding: 10px;">
-                    <h4 style="text-align: center;"> Mumuksha's Profile</h4>
-                    <hr>
-                    <button style="float: right;" onclick="window.location.href='/Kanbas/Account/Profile/edit.html'">Edit Profile</button>
-                    <h3>MUMUKSHA PANT</h3><br>
-                    <img src="../../../Mumu.png" width="150" height="200"> 
-                    
+
+    <div class="wd-flex-row-container">
+
+
+        <div> <!--kanbas nav-->
+            <ul class="kanbas-navigation" style="height: 100%;">
+
+
+                <li>
+                    <img src="/NU Logo.png" style="height: 58px; width: 58px;">
+                </li>
+
+                <li class="wd-active">
+
+                    <a href="/Kanbas/Account/Profile/screen.html" class="wd-active"> <i class="fa fa-user fa-2x"
+                            aria-hidden="true" style="display: block; margin: 0 auto;"></i>Account</a>
+                </li>
+
+
+                <li>
+
+
+
+                    <a href="/Kanbas/Dashboard/dashboard.html"> <i class="fa fa-window-maximize fa-2x"
+                            aria-hidden="true" style="display: block; margin: 0 auto;"></i> Dashboard </a>
+                </li>
+
+
+
+                <li>
+                    <a href="/Kanbas/Courses/Home/screen.html"> <i class="fa fa-book fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>
+                        Courses </a>
+                </li>
+
+
+                <li>
+                    <a href="#"><i class="fa fa-calendar fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>Calendar</a>
+                </li>
+
+
+
+                <li>
+
+                    <a href="#"><i class="fa fa-inbox fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i> Inbox </a>
+                </li>
+
+
+                <li>
+                    <a href="#"> <i class="fa fa-undo fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>
+                        History </a>
+                </li>
+
+
+                <li>
+
+                    <a href="#"><i class="fa fa-window-restore fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>
+                        Studio</a>
+                </li>
+
+                <li>
+
+                    <a href="#"> <i class="fa fa-question fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>
+                        Help </a>
+                </li>
+
+
+            </ul>
+
+        </div> <!--kanbas navbar close-->
+
+        <!--second col>-->
+        <div class="col">
+            <div class="row" style="width: 100%;">
+
+                <div class="col">
+                    <!--second nav-->
+                    <nav style="--bs-breadcrumb-divider:  '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb wd-course-header" style="padding-top: 10px; padding-left: 10px; ">
+                            <i class="fa fa-bars" style="color: #C51E3A;padding-right: 20px; font-size: 25px;"
+                                aria-hidden="true"></i>
+
+                            <h3> Mumuksha Pant's Profile</h3>
+                            <!----<li class="breadcrumb-item">CS5610 Web Programming</li>
+                                <li class="breadcrumb-item">Fall 2023</li>
+                                <li class="breadcrumb-item">Section 2</li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="#">Assignments</a></li>
+                                -->
+                        </ol>
+
+                    </nav>
+
+                </div>
+
+
+                <div class="col float-end">
+                    <button type="button" class="btn btn-primary float-end m-1 p-2"
+                        style="color:  #333333;background-color:  azure; border:  #333333 solid 1px; ">
+                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                        Student View</button>
+                </div>
+
+            </div>
+            <hr>
+
+
+
+            <div class="wd-flex-row-container">
+
+                <!--second nav here-->
+                <div class="second-navigation" style="width: 180px;">
+
+
+                    <ul style="padding: 10px; margin-left: 10px; width: 190px; ">
+
+                        <p style="color: darkgray; font-size: 16px; font-family: Lato Extended"><i>Fall 2023 </i></p>
+
+
+                        <li>
+                            <a href="#">Notification</a>
+
+                        </li>
+
+                        <li class="wd-active">
+                            <a href="#" class="wd-active">Profile </a>
+                        </li>
+
+                        <li>
+                            <a href="#">Files</a>
+
+                        </li>
+
+
+
+                        <li><a href="#">Settings</a></li>
+
+                        <li>
+                            <a href="#">e Portfolio</a>
+
+                        </li>
+
+                        <li>
+                            <a href="#">Shared Content</a>
+
+                        </li>
+
+                        <li>
+                            <a href="#">The Hub</a>
+
+                        </li>
+
+                        <li>
+                            <a href="#">Qwickly Course Tools</a>
+
+                        </li>
+
+                        <li>
+                            <a href="#">Global Announcements</a>
+
+                        </li>
+
+
+
+                    </ul>
+                </div> <!--closing second-->
+
+
+
+
+
+                <!--col 3 -->
+                <div style="width: 70%; margin-left: 50px;">
+                    <br>
+
+
+
+                    <button class="btn btn-primary float-end"
+                        onclick="window.location.href='/Kanbas/Account/Profile/edit.html'"
+                        style="background-color: gray; "><i class="fa fa-pencil" aria-hidden="true"></i>
+                        Edit Profile </button>
+
+                    <br><br>
+                    <i class="fa fa-user fa-6x rounded-circle text-center p-3" aria-hidden="true"
+                        style="background-color: gainsboro"></i>
+
+                    <br><br>
+                    <h3>MUMUKSHA PANT</h3><br><br>
                     <h4> Contact</h4>
-                    No registered services, you can add some on the <a href="/Kanbas/Account/Profile/Settings/settings.html">Settings</a> Page
-                   <br>
-                   <br>
-                   <h4>Biography</h4>
-                   Student, Software Engineer actively seeking coop roles. Back in Grad school for advanced studies in Computer Sciences.
-                   <br><br>
-                   <h4>Links</h4>
-                   <a href="https://www.linkedin.com/in/mumuksha-pant/">LinkedIn</a><br>
-                   <a href="https://github.com/mumukshapant">GitHub</a>
-</td>
+                    No registered services, you can add some on the <a
+                        href="/Kanbas/Account/Profile/Settings/settings.html" style="color: red;">Settings</a> Page
+                    <br>
+                    <br>
+                    <h4>Biography</h4>
+                    Student, Software Engineer actively seeking coop roles. Back in Grad school for advanced studies in
+                    Computer Sciences.
+                    <br><br>
+                    <h4>Links</h4>
+                    <a href="https://www.linkedin.com/in/mumuksha-pant/" style="text-decoration: none; color: red;"><i
+                            class="fa fa-link" aria-hidden="true" style="color: black;"></i>
+                        LinkedIn <i class="fa fa-linkedin" aria-hidden="true" style="color: blue;"></i>
+                    </a><br>
+                    <a href="https://github.com/mumukshapant" style="text-decoration: none; color: red;"><i
+                            class="fa fa-link" aria-hidden="true" style="color: black;"></i>
+                        GitHub <i class="fa fa-github" aria-hidden="true" style="color: black;"></i>
+                    </a>
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=_Hq9n7cc8rk" style="text-decoration: none; color: red;"><i
+                            class="fa fa-link" aria-hidden="true" style="color: black;"></i>
+                        YouTube <i class="fa fa-youtube" aria-hidden="true" style="color: black;"></i>
+                    </a>
+                </div><!--closing 3-->
 
-                </tr>
-                </table>
+
+            </div>
 
 
-    </body>
+
+
+
+</body>
+
 </html>

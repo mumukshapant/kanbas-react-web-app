@@ -1,162 +1,560 @@
-
 <html>
-    <head>
-        <title>Assignments Homepage</title>
 
-    </head>
+<head>
+    <title>Assignments Homepage</title>
 
-   
+    <link href="/Kanbas/Account/Profile/screen.css" rel="stylesheet" />
 
-    <body>
-    
-           
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
 
-          <table border="1" width="100%">
-              <tr valign="baseline">
-                  <!-- first col -->
-                  <td>
-                   <ul>
-                      
-                    <li> <a href="/Kanbas/Account/Profile/screen.html ">Account</a></li>
-                    <li><a href="#"> Dashboard </a></li> 
-                    <li> <a href="/Kanbas/Courses/Home/screen.html"> Courses </a></li>
-           
-                    <li> <a href="#">Calendar</a></li>
-                    <li><a href="#"> Inbox </a></li> 
-                    <li> <a href="#"> History </a></li>
-                    <li> <a href="#">Studio</a></li>
-                    <li><a href="#"> Help </a></li> 
-             
-                   </ul>
-                  </td>
-              <!-- second col -->
-              <td>
-                <ul>
-                    <li><a href="/Kanbas/Courses/Home/screen.html">Home</a>
-                    <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-                    <li><a href="#">Piazza</a></li>
-                    <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades </a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+    <script src="https://kit.fontawesome.com/b303dc9fdb.js">
+
+    </script>
+
+    <link href="/Kanbas/Courses/Settings/index.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
 
 
 
-                </ul>
-              </td>
-          
-<td>
-                    <input placeholder="Search for Assignments"></input> 
-                    
+</head>
 
-                    <button>Group</button>
-                    <button>Assignment</button>
-                    <select>
-                        <option>Edit Assignment Dates</option>
-                        <option>Assignments Group Weights</option>
-                        <option>Gradescope 1.3</option>
-                        <option>Commons Favourites</option>
-                    </select>
+
+
+<body>
+
+
+
+
+    <div class="wd-flex-row-container">
+
+
+        <div> <!--kanbas nav-->
+            <ul class="kanbas-navigation" style="height: 100%;">
+
+
+                <li>
+                    <img src="/NU Logo.png" style="height: 58px; width: 58px;">
+                </li>
+
+                <li>
+
+                    <a href="/Kanbas/Account/Profile/screen.html"> <i class="fa fa-user fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>Account</a>
+                </li>
+
+
+                <li>
+
+
+
+                    <a href="/Kanbas/Dashboard/dashboard.html"> <i class="fa fa-window-maximize fa-2x"
+                            aria-hidden="true" style="display: block; margin: 0 auto;"></i> Dashboard </a>
+                </li>
+
+
+
+                <li class="wd-active">
+                    <a href="/Kanbas/Courses/Home/screen.html" class="wd-active"> <i class="fa fa-book fa-2x"
+                            aria-hidden="true" style="display: block; margin: 0 auto;"></i>
+                        Courses </a>
+                </li>
+
+
+                <li>
+                    <a href="#"><i class="fa fa-calendar fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>Calendar</a>
+                </li>
+
+
+
+                <li>
+
+                    <a href="#"><i class="fa fa-inbox fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i> Inbox </a>
+                </li>
+
+
+                <li>
+                    <a href="#"> <i class="fa fa-undo fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>
+                        History </a>
+                </li>
+
+
+                <li>
+
+                    <a href="#"><i class="fa fa-window-restore fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>
+                        Studio</a>
+                </li>
+
+                <li>
+
+                    <a href="#"> <i class="fa fa-question fa-2x" aria-hidden="true"
+                            style="display: block; margin: 0 auto;"></i>
+                        Help </a>
+                </li>
+
+
+            </ul>
+
+        </div> <!--kanbas navbar close-->
+
+
+
+
+        <!--second col>-->
+
+
+        <div class="col">
+            <div class="row" style="width: 100%;">
+
+                <div class="col">
+                    <!--second nav-->
+                    <nav style="--bs-breadcrumb-divider:  '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb wd-course-header" style="padding-top: 10px; padding-left: 10px; ">
+                            <i class="fa fa-bars" style="color: #C51E3A;padding-right: 20px; font-size: 25px;"
+                                aria-hidden="true"></i>
+                            <li class="breadcrumb-item">CS5610 Web Programming</li>
+                            <li class="breadcrumb-item">Fall 2023</li>
+                            <li class="breadcrumb-item">Section 2</li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="#">Assignments</a></li>
+                        </ol>
+                    </nav>
+
+                </div>
+
+
+                <div class="col float-end">
+                    <button type="button" class="btn btn-primary float-end m-1 p-2"
+                        style="color:  #333333;background-color:  azure; border:  #333333 solid 1px; ">
+                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                        Student View</button>
+                </div>
+
+            </div>
+            <hr>
+
+
+
+            <div class="wd-flex-row-container">
+
+                <!--second nav here-->
+                <div class="second-navigation" style="width: 180px;">
+
+
+                    <ul style="padding: 10px; margin-left: 10px; width: 190px; ">
+
+                        <p style="color: darkgray; font-size: 16px; font-family: Lato Extended"><i>Fall 2023 </i></p>
+
+
+                        <a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                        <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li class="wd-active"><a href="/Kanbas/Courses/Assignments/screen.html"
+                                class="wd-active">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades </a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a></li>
+                        <li><a href="#">Announcements <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a></li>
+                        <li><a href="#">Pages <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a> </li>
+                        <li><a href="#">Files <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a></li>
+                        <li><a href="#">Rubrics <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a></li>
+                        <li><a href="#">Outcomes <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a></li>
+                        <li><a href="#">Collaborations <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a></li>
+                        <li><a href="#">Syllabus <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </a></li>
+                        <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+
+
+
+
+                    </ul>
+                </div> <!--closing second-->
+
+
+                <!--main content here-->
+                <div style="width: 70%; margin-left: 50px;">
+
+
+
+                    <br><br>
+                    <br>
+                    <div class="row">
+
+                        <div class="col-md-8">
+
+                            <input type="text" class="form-control" placeholder="Search for Assignments">
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="d-flex">
+                                <button class="btn btn-light float-end">Group</button>
+                                <button class="btn btn-danger float-end">+ Assignment</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
                     <hr>
 
-                    <h3>ASSIGNMENTS 40% Of Total
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move To...</option>
-                        <option>Send To...</option>
-                        <option>Copy To...</option>
-                    </select> </h3>
 
 
-                    <ul>
-                        <li><a href="/Kanbas/Courses/Assignments/editing.html" >Assignment 1 HTML Introduction </a> | Not Available</li>
-                        <li><a href="/Kanbas/Courses/Assignments/editing.html" >Assignment 2 CSS Styling </a> | Not Available</li>
-                        <li><a href="/Kanbas/Courses/Assignments/editing.html" >Assignment 3 Mongo and Multiple Modules</a> | Not Available</li>
-                        <li><a href="/Kanbas/Courses/Assignments/editing.html" >Assignment 4 Building and Deploying a Web App </a> | Not Available</li>
-                        <li><a href="/Kanbas/Courses/Assignments/editing.html" >Assignment 5 React Basics to Advanced</a> | Not Available</li>
-                        <li><a href="/Kanbas/Courses/Assignments/editing.html" >Assignment 6 Javascript</a> | Not Available</li>
+                    <ul class="list-group assignments">
+
+                        <li
+                            class=" list-group-item  list-group-item-secondary  justify-content-between align-items-center d-flex ">
+                            <strong> Assignments</strong>
+                            <div class="rounded float-end"
+                                style="border-radius: 5px; border-style: solid;border-width: 1px; padding: 5px;"> 40% Of
+                                Total</div>
+
+                        </li>
+
+
+
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a class=" list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start"
+                                href="/Kanbas/Courses/Assignments/editing.html">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">A1 - Environment Setup , HTML Basics</h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <small class="text-muted">Due Sep 18, 2023</small>
+                            </a>
+
+                        </li>
+
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a class="list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start"
+                                href="/Kanbas/Courses/Assignments/editing.html ">
+
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Assignment 2 - CSS and Bootstrap </h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <div class="text-muted">Due Sep 18, 2023</div>
+
+                            </a>
+                        </li>
+
+
+
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a class="list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start"
+                                href="/Kanbas/Courses/Assignments/editing.html ">
+
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Assignment 2 - CSS and Bootstrap </h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <div class="text-muted">Due Sep 18, 2023</div>
+
+                            </a>
+                        </li>
+
+
+
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a class="list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start"
+                                href="/Kanbas/Courses/Assignments/editing.html ">
+
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Assignment 2 - CSS and Bootstrap </h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <div class="text-muted">Due Sep 18, 2023</div>
+
+                            </a>
+                        </li>
+
+
+
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a class="list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start"
+                                href="/Kanbas/Courses/Assignments/editing.html ">
+
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Assignment 2 - CSS and Bootstrap </h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <div class="text-muted">Due Sep 18, 2023</div>
+
+                            </a>
+                        </li>
+
                     </ul>
 
-                    <h3>QUIZZES 10% Of Total
-                        <select>
-                            <option>Edit</option>
-                            <option>Speed Grader</option>
-                            <option>Duplicate</option>
-                            <option>Delete</option>
-                            <option>Move To...</option>
-                            <option>Send To...</option>
-                            <option>Copy To...</option>
-                        </select> 
-                    </h3>
-                    <ul>
-                        <li><a href="#">Q1- HTML Multiple Modules</a></li>
-                        <li><a href="#">Q2- CSS Multiple Modules</a></li>
-                        <li><a href="#">Q3- JS, ES6 Multiple Modules</a></li>
-                        <li><a href="#">Q4- NODE Multiple Modules</a></li>
-                        <li><a href="#">Q5- MONGO Multiple Modules</a></li>
-                    
+
+                    <ul class="list-group assignments">
+
+
+
+                        <li
+                            class=" list-group-item  list-group-item-secondary  justify-content-between align-items-center d-flex ">
+                            <strong> Quizzes</strong>
+                            <div class="rounded float-end"
+                                style="border-radius: 5px; border-style: solid;border-width: 1px; padding: 5px;"> 10% Of
+                                Total</div>
+
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a href="/Kanbas/Courses/Assignments/editing.html"
+                                class="list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Assignment 2 - CSS and Bootstrap </h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <div class="text-muted">Due Sep 18, 2023</div>
+
+                            </a>
+                        </li>
+
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a class="list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start"
+                                href="/Kanbas/Courses/Assignments/editing.html ">
+
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Assignment 2 - CSS and Bootstrap </h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <div class="text-muted">Due Sep 18, 2023</div>
+
+                            </a>
+                        </li>
+
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a class="list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start"
+                                href="/Kanbas/Courses/Assignments/editing.html ">
+
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Assignment 2 - CSS and Bootstrap </h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <div class="text-muted">Due Sep 18, 2023</div>
+
+                            </a>
+                        </li>
+
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a class="list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start"
+                                href="/Kanbas/Courses/Assignments/editing.html ">
+
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Assignment 2 - CSS and Bootstrap </h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <div class="text-muted">Due Sep 18, 2023</div>
+
+                            </a>
+                        </li>
+
+
+
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a class="list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start"
+                                href="/Kanbas/Courses/Assignments/editing.html ">
+
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Assignment 2 - CSS and Bootstrap </h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <div class="text-muted">Due Sep 18, 2023</div>
+
+                            </a>
+                        </li>
+                        </li>
+
+
+
 
                     </ul>
 
-                    <h3>EXAMS 20% Of Total
-                        <select>
-                            <option>Edit</option>
-                            <option>Speed Grader</option>
-                            <option>Duplicate</option>
-                            <option>Delete</option>
-                            <option>Move To...</option>
-                            <option>Send To...</option>
-                            <option>Copy To...</option>
-                        </select> 
-                    </h3>
-                    <ul>
-                        <li><a href="#">Midterms</a> </li>
-                        <li><a href="#">Finals</a>  </li>
-                    
+
+                    <ul class="list-group assignments">
+
+                        <li
+                            class=" list-group-item  list-group-item-secondary  justify-content-between align-items-center d-flex ">
+                            <strong> Exams </strong>
+                            <div class="rounded float-end"
+                                style="border-radius: 5px; border-style: solid;border-width: 1px; padding: 5px;"> 20% Of
+                                Total</div>
+
+                        </li>
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a class="list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start"
+                                href="/Kanbas/Courses/Assignments/editing.html ">
+
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Assignment 2 - CSS and Bootstrap </h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <div class="text-muted">Due Sep 18, 2023</div>
+
+                            </a>
+                        </li>
+
+
+
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a class="list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start"
+                                href="/Kanbas/Courses/Assignments/editing.html ">
+
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Assignment 2 - CSS and Bootstrap </h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <div class="text-muted">Due Sep 18, 2023</div>
+
+                            </a>
+                        </li>
                     </ul>
 
-                    <h3>PROJECT 30% Of Total
-                        <select>
-                            <option value="/Kanbas/Courses/Assignments/editing.html">
-                               Edit
-                            </option>
 
-                            <option>Speed Grader</option>
-                            <option>Duplicate</option>
-                            <option>Delete</option>
-                            <option>Move To...</option>
-                            <option>Send To...</option>
-                            <option>Copy To...</option>
-                        </select> 
-                    </h3>
-                    <ul>
-                        <li><a href="#">Project Abstract</a></li>
-                        <li><a href="#"> Project Report</a> </li>
-                        <li><a href="#">Modules</a>  </li>
-                       
+
+                    <ul class="list-group assignments">
+
+                        <li
+                            class=" list-group-item  list-group-item-secondary  justify-content-between align-items-center d-flex ">
+                            <strong> PROJECT </strong>
+                            <div class="rounded float-end"
+                                style="border-radius: 5px; border-style: solid;border-width: 1px; padding: 5px;"> 30% Of
+                                Total</div>
+
+                        </li>
+
+
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a class="list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start"
+                                href="/Kanbas/Courses/Assignments/editing.html ">
+
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Assignment 2 - CSS and Bootstrap </h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <div class="text-muted">Due Sep 18, 2023</div>
+
+                            </a>
+                        </li>
+
+
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a class="list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start"
+                                href="/Kanbas/Courses/Assignments/editing.html ">
+
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Assignment 2 - CSS and Bootstrap </h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <div class="text-muted">Due Sep 18, 2023</div>
+
+                            </a>
+                        </li>
+
+                        <li
+                            class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                            <a class="list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start"
+                                href="/Kanbas/Courses/Assignments/editing.html ">
+
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Assignment 2 - CSS and Bootstrap </h5>
+                                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                                </div>
+                                <p class="mb-1">Week 0</p>
+                                <div class="text-muted">Due Sep 18, 2023</div>
+
+                            </a>
+                        </li>
+
+
                     </ul>
 
 
-</td>
-</tr>
-</table>
 
-    </body>
+                </div>
+            </div>
+
+
+        </div><!--closing main -->
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
 
 
 </html>
