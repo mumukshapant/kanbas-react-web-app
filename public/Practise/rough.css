@@ -1,0 +1,10 @@
+/* No need to change the styles for dropdowns, use Bootstrap classes */
+
+ .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.navbar-nav .nav-item a.nav-link:hover, .navbar-nav .nav-item.dropdown:hover .nav-link {
+    background-color: red;
+}

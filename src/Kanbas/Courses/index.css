@@ -1,0 +1,10 @@
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .custom-col {
+    flex: 1 0 0; /* This sets the flex property to "1 0 0" */
+  }
+  

@@ -1,0 +1,18 @@
+.cards-container {
+  display: flex;
+  gap: 10px; 
+}
+
+
+
+.btn-link {
+  color: #007BFF; 
+  text-decoration: none; 
+  &:hover {
+    text-decoration: underline; 
+  }
+}
+
+.card-body {
+  text-align: center; 
+}

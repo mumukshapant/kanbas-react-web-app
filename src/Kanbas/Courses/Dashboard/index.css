@@ -1,0 +1,13 @@
+/* Dashboard.css */
+.no-blue-link {
+    color: #007BFF; /* Change the color of the link text */
+    text-decoration: none; /* Remove underline */
+    &:hover {
+      text-decoration: underline; /* Add underline on hover if desired */
+    }
+  }
+  
+  .card-body {
+    text-align: center; /* Center align text inside the card */
+  }
+  

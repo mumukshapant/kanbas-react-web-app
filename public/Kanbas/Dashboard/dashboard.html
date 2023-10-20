@@ -21,75 +21,15 @@
                 <div class="row" style="height: 100%;">
                         <!-- first col -->
                         <div class="col-1">
-                                <ul class="kanbas-navigation" style="height: 100%;">
+                                <div id="first"> </div>
 
-                                        <li>
-                                                <img src="/NU Logo.png" style="height: 58px; width: 58px;">
-                                        </li>
-
-                                        <li>
-
-                                        <li>
-                                                <i class="fa fa-user fa-2x" aria-hidden="true"
-                                                        style="display: block; margin: 0 auto;"></i>
-                                                <a href="/Kanbas/Account/Profile/screen.html" ">Account</a>
-                </li>
-               
-
-                <li class=" wd-active">
-                                                        <i class="fa fa-window-maximize fa-2x" aria-hidden="true"
-                                                                style="display: block; margin: 0 auto;"></i>
-
-
-                                                        <a href="/Kanbas/Dashboard/dashboard.html"> Dashboard </a>
-                                        </li>
-
-
-
-                                        <li>
-                                                <i class="fa fa-book fa-2x" aria-hidden="true"
-                                                        style="display: block; margin: 0 auto;"></i>
-                                                <a href="/Kanbas/Courses/Home/screen.html"> Courses </a>
-                                        </li>
-
-
-                                        <li><i class="fa fa-calendar fa-2x" aria-hidden="true"
-                                                        style="display: block; margin: 0 auto;"></i>
-                                                <a href="#">Calendar</a>
-                                        </li>
-
-
-
-                                        <li><i class="fa fa-inbox fa-2x" aria-hidden="true"
-                                                        style="display: block; margin: 0 auto;"></i>
-
-                                                <a href="#"> Inbox </a>
-                                        </li>
-
-
-                                        <li>
-                                                <i class="fa fa-undo fa-2x" aria-hidden="true"
-                                                        style="display: block; margin: 0 auto;"></i>
-                                                <a href="#"> History </a>
-                                        </li>
-
-
-                                        <li>
-                                                <i class="fa fa-window-restore fa-2x" aria-hidden="true"
-                                                        style="display: block; margin: 0 auto;"></i>
-
-                                                <a href="#">Studio</a>
-                                        </li>
-
-                                        <li>
-                                                <i class="fa fa-question fa-2x" aria-hidden="true"
-                                                        style="display: block; margin: 0 auto;"></i>
-
-                                                <a href="#"> Help </a>
-                                        </li>
-
-
-                                </ul>
+                                <script type="module">
+                                    import Home from '/Kanbas/KanbasNavigation/Home.js'
+                                    const x = Home(); 
+                                        const first = document.getElementById("first");
+                                        first.innerHTML=x;
+                                </script>
+                        
 
                         </div> <!-- closing first column-->
 
@@ -97,7 +37,7 @@
                         <div class="col-xl">
                                 <h2>Dashboard</h2>
                                 <hr>
-                                <h4>Published Courses (8)</h4>
+                                <h4>Published Courses (3)</h4>
                                 <hr>
                                 <div class="row">
                                         <!-- Course 1 -->

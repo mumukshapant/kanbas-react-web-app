@@ -1,0 +1,50 @@
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .custom-col {
+    flex: 1 0 0; /* This sets the flex property to "1 0 0" */
+  }
+  
+  .module-list {
+    /* Your styles for the entire module list container */
+    background-color: white; /* Set the background to white */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .module-list-header {
+    /* Your styles for the header section */
+  }
+  
+  .module-list-item {
+    /* Your styles for individual module list items */
+    background-color: white; /* Set the background to white */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    color: gray; /* Title text color */
+  }
+  
+  .module-list-item h3 {
+    color: gray; /* Title text color */
+  }
+  
+  .lesson-list {
+    /* Your styles for the lesson list container */
+  }
+  
+  .lesson-list-item {
+    /* Your styles for individual lesson list items */
+    background-color: white; /* Set the background to white */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white; /* Rest of the text color */
+  }
+  

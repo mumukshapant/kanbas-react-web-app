@@ -2,42 +2,39 @@
 
 <head>
     <title>Kanbas Navigation </title>
-    <style>
-        .float-container {
-            display: flex;
-        }
+    <link href="/Kanbas/Account/Profile/screen.css" rel="stylesheet" />
 
-        .float-child {
-            padding: 10px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+    <script src="https://kit.fontawesome.com/b303dc9fdb.js">
+
+    </script>
+
+    <link href="/Kanbas/Courses/Settings/index.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
 </head>
 
 <body>
 
 
-    <table width="100%" border="1">
-        <tr valign="baseline">
-            <!-- first col -->
-            <td>
-                <ul>
-                    <li> <a href="/Kanbas/Account/Profile/screen.html ">Account</a></li>
-                    <li><a href="/Kanbas/Dashboard/screen.html "> Dashboard </a></li>
-                    <li> <a href="/Kanbas/Courses/Home/screen.html  "> Courses </a></li>
+   <div id="root"></div>
+   <script type="module">
+    import FirstNav from "./index.js";
 
-                    <li> <a href="#">Calendar</a></li>
-                    <li><a href="# "> Inbox </a></li>
-                    <li> <a href="#"> History </a></li>
-                    <li> <a href="#">Studio</a></li>
-                    <li><a href="#"> Help </a></li>
-
-
-                </ul>
-            </td>
-
-        </tr>
-    </table>
-
+const html = FirstNav(); 
+const root = document.getElementById("root");
+root.innerHTML=html;
+   </script>
 
 
 
