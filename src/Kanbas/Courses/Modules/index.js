@@ -1,5 +1,7 @@
 import ModuleList from "./ModuleList";
 import { FaCheckCircle, FaEllipsisV } from "react-icons/fa";
+import React from "react";
+
 function Modules() {
   return (
     <div>

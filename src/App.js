@@ -7,6 +7,7 @@ import { HashRouter, Link, Navigate, Route, Routes } from "react-router-dom";
 import Courses from "./Kanbas/Courses";
 import Dashboard from "./Kanbas/Dashboard";
 import Nav from "./Nav";
+import StateManagement from "./Lectures";
 
 function App() {
   const screen = "Labs";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/Hello" element={<HelloWorld />} />
           <Route path="/Labs/*" element={<Labs />} />
           <Route path="/Kanbas/*" element={<Kanbas />} />
+          <Route path="/Lectures" element={<StateManagement />} />
            
 
 

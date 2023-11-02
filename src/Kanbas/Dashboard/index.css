@@ -16,3 +16,12 @@
 .card-body {
   text-align: center; 
 }
+
+.wd-spacing{
+  margin-bottom: 5px;
+}
+
+.wd-spacing.form-control{
+  margin-bottom: 15px;
+
+}

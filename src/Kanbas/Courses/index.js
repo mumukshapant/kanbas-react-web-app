@@ -12,12 +12,12 @@ import { Link } from 'react-router-dom';
 import Grades from './Grades';
 
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
   const location = useLocation();
   const pathSegments = location.pathname.split('/').filter(segment => segment !== '');
 
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
 
   return (
 

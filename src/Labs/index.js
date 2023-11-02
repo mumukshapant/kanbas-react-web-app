@@ -3,13 +3,18 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Assignment3 from "./a3";
 import Assignment4 from "./a4";
 import Assignment5 from "./a5";
-
+import store from "./store";
+import { Provider } from "react-redux";
 import { Link } from "react-router-dom";
 
 function Labs(){
 return(
+    <Provider store={store}>
+
     <div>
+
         <h3>Labs </h3>
+
 <div className="nav nav-pills">
 <Link to="./App.js" className="nav-link"> Assignment3 </Link><br></br>
 <Link to="/Labs/a4" className="nav-link"> Assignment4 </Link>
@@ -27,7 +32,10 @@ return(
       <Assignment3/>
       <Assignment4/>
       <Assignment5/> */}
+
     </div>
+    </Provider>  
+
 );
 }
 

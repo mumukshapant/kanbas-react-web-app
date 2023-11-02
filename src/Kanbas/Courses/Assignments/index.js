@@ -1,13 +1,21 @@
-import React from "react";
-import { Link, useParams } from "react-router-dom";
+import React,{useState} from "react";
+import { Link, useParams} from "react-router-dom";
 import db from "../../Database";
-import { FaEllipsisV, FaCheckCircle, FaBars, FaEyeSlash } from "react-icons/fa";
+import { FaEllipsisV, FaCheckCircle, FaBars, FaTrash } from "react-icons/fa";
 import { FaDownload, FaCog, FaSearch, FaFilter, FaFileImport } from "react-icons/fa";
-
+import {
+  addAssignment,
+  deleteAssignment,
+  updateAssignment,
+  selectAssignment,
+} from "./assignmentsReducer";
+import { useSelector, useDispatch } from "react-redux";
 
 function Assignments() {
   const { courseId } = useParams();
-  const assignments = db.assignments;
+  const assignments = useSelector((state) => state.assignmentsReducer.assignments);
+  const assignment = useSelector((state) => state.assignmentsReducer.assignment);
+  const dispatch = useDispatch();
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId);
   return (
@@ -25,30 +33,45 @@ function Assignments() {
                 <div className="col">
                   <div className="btn-group" role="group" >
                     <button className="btn btn-outline-secondary float-end m-1"> +Group</button>
-                    <button className="btn btn-danger float-end m-1"> +Assignment</button>
-                    <button className="btn btn-outline-secondary float-end m-1"><FaEllipsisV></FaEllipsisV></button>
+                   
+                
+
+        <button className="btn btn-danger float-end m-1"
+          onClick={() => dispatch(addAssignment({ ...assignment, course: courseId }))}>
+          +Assignment
+        </button>
+
+ <button className="btn btn-outline-secondary float-end m-1"><FaEllipsisV></FaEllipsisV></button>
                   </div>
                 </div>
 
                 </div>
               <hr />
 
-        {courseAssignments.map((assignment) => (
-          <Link
-            key={assignment._id}
-            to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
-            className="list-group-item">
-            <h5 style={{ display: 'flex', justifyContent: 'space-between' }}>
-  {assignment.title}
-  <div>
- <small> <FaCheckCircle style={{ color: 'green' }}></FaCheckCircle></small>
-   <small><FaEllipsisV></FaEllipsisV></small> 
+              {courseAssignments.map((assignment) => (
+  <div className="container-fluid list-group-item" style={{ width: "100%", marginBottom: "20px" , textDecoration:"none"}}>
+    <Link style={{textDecoration:"none", color:"black"}}
+      key={assignment._id}
+      to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
+      
+    >
+      <h5 style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        {assignment.title}
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <small>
+            <FaCheckCircle style={{ color: 'green' }}></FaCheckCircle>
+          </small>
+          <small>
+            <FaEllipsisV></FaEllipsisV>
+          </small>
+        </div>
+      </h5>
+    </Link>
+    <button className="btn btn-danger float-end" style={{ fontSize: "12px" }} onClick={() => dispatch(deleteAssignment(assignment._id))}>Delete</button>
   </div>
-</h5>
-            
-            
-             </Link>))
-        }
+))}
+
+
 
   </div>
 </div>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="hello.js">
+
+	</script>
+</head>
+<body>
+    <button onclick="sayHello()">Click Me!!</button><br>
+	<input id="a" value="27"/>
+
+	<script>
+
+		let result = document.getElementById("a"); 
+		let theValue = result.value; 
+		// alert(theValue);
+
+
+	</script>
+
+	<input id="var1" />
+	<input id="var2" />
+
+
+<button onclick="add()">
++ 
+</button>
+
+
+
+<h1>House</h1>
+	<ul>
+		<li id="rooms"></li>
+		<li id="baths"></li>
+		<li id="squareFeet"></li>
+	</ul>
+
+	<script>
+		const house = {
+		rooms: 5,
+		baths: 3,
+		sqf: 1300
+	};
+	document.getElementById("rooms").innerHTML = house.rooms;
+	document.getElementById("baths").innerHTML= house.baths; 
+	</script>
+
+
+<h1> Es 6 functions</h1>
+<p id="even">
+
+</p>
+<p id="find"></p>
+<script>
+	let arr = [10,11,12,13,14]; 
+	let even = arr.filter( (i) => {return i%2==0} )
+	let odd = arr.filter( (i) => {return i%2!=0})
+
+	let find = arr.filter( x => x>12 );
+
+	document.getElementById("even").innerHTML=even; 
+
+	document.getElementById("find").innerHTML= find;
+
+
+</script>
+
+<h1> String Interpolation</h1>
+<p id="user-details">
+</p>
+
+
+
+<script>
+const qwe = 321
+const asd = 456
+const zxc = [321, qwe, 432, asd, 321]
+const [ewq, rew] = zxc
+console.log(ewq)
+console.log(rew)
+
+document.write(ewq);
+document.write(rew);
+
+
+
+</script>
+<h1 class="qwe"
+<br>
+
+</body>
+</html>

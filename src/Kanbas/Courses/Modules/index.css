@@ -5,46 +5,72 @@
   }
 
   .custom-col {
-    flex: 1 0 0; /* This sets the flex property to "1 0 0" */
+    flex: 1 0 0; 
   }
   
   .module-list {
-    /* Your styles for the entire module list container */
-    background-color: white; /* Set the background to white */
+    background-color: white; 
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
   
-  .module-list-header {
-    /* Your styles for the header section */
-  }
+  
   
   .module-list-item {
-    /* Your styles for individual module list items */
-    background-color: white; /* Set the background to white */
+    background-color: white; 
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin-top: 10px;
-    color: gray; /* Title text color */
+    color: gray; 
   }
   
   .module-list-item h3 {
-    color: gray; /* Title text color */
+    color: gray; 
   }
   
-  .lesson-list {
-    /* Your styles for the lesson list container */
-  }
-  
+
   .lesson-list-item {
-    /* Your styles for individual lesson list items */
-    background-color: white; /* Set the background to white */
+    background-color: white; 
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin-top: 10px;
-    color: white; /* Rest of the text color */
+    color: white; 
   }
   
+  .btn.btn-danger.add{
+    color:white;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+     background: green; 
+      border-width:3px ;
+      border-color: green;
+      width: 200px;
+             
+  }
+
+  .btn.btn-primary.edit{
+  background-color:#ededed;
+   border-width:3px ;
+   border-color:black;
+    color:black ;
+    width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+         
+  }
+
+  .list-group-item.form{
+    display: flex;
+    align-items: center;  
+  }
+
+  .container-fluid.add-edit{
+    margin-bottom:15px; 
+    width:740px;
+    border-radius: 10px;
+  }
