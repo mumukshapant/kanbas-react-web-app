@@ -1,25 +1,47 @@
-import React from "react";
+import React,{useState} from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import db from "../../../Database";
+import { useSelector, useDispatch } from "react-redux";
+import { addAssignment, updateAssignment, setAssignment } from "../assignmentsReducer";
+import { v4 as uuidv4 } from 'uuid';
 
 
 function AssignmentEditor() {
   const { assignmentId } = useParams();
   const assignment = db.assignments.find(
     (assignment) => assignment._id === assignmentId);
+    const dispatch = useDispatch();
+   
+    const [assignmentData, setAssignment] = useState({
+      title: assignment?assignment.title:<input type="text"></input>,
+      description: "New Description",
+    });
 
 
   const { courseId } = useParams();
   const navigate = useNavigate();
-  const handleSave = () => {
-    console.log("Actually saving assignment TBD in later assignments");
+
+
+
+  const handleSave = (e) => {
+    const newAssignment = {
+      ...assignmentData,
+      _id: uuidv4(),
+      title: assignment?assignment.title:<input type="text"></input>, // Generate a unique ID
+    };
+    e.preventDefault();
+    dispatch(addAssignment(assignmentData));
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
+  
+
+
+  
   return (
     <div>
-      <h2>Assignment Name</h2>
-      <input value={assignment.title}
-             className="form-control mb-2" />
+      <h2>Assignment</h2>
+      <input value={assignment ? assignment.title : "New Assignment"}
+           className="form-control mb-2" />
 <br></br>
 
 
@@ -266,3 +288,4 @@ function AssignmentEditor() {
 
 
 export default AssignmentEditor;
+

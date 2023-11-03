@@ -1,5 +1,9 @@
 import React,{useState} from "react";
 import { Link, useParams} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
+
+
 import db from "../../Database";
 import { FaEllipsisV, FaCheckCircle, FaBars, FaTrash } from "react-icons/fa";
 import { FaDownload, FaCog, FaSearch, FaFilter, FaFileImport } from "react-icons/fa";
@@ -12,10 +16,25 @@ import {
 import { useSelector, useDispatch } from "react-redux";
 
 function Assignments() {
-  const { courseId } = useParams();
   const assignments = useSelector((state) => state.assignmentsReducer.assignments);
-  const assignment = useSelector((state) => state.assignmentsReducer.assignment);
+
   const dispatch = useDispatch();
+
+  const { courseId } = useParams();
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate("CreateAssignment");
+  };
+
+  const handleDelete = (assignmentId) => {
+    const confirmation = window.confirm("Are you sure you want to remove this assignment?");
+    if (confirmation) {
+        dispatch(deleteAssignment(assignmentId)); // Assuming you have a deleteAssignment action
+    }
+};
+
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId);
   return (
@@ -37,7 +56,7 @@ function Assignments() {
                 
 
         <button className="btn btn-danger float-end m-1"
-          onClick={() => dispatch(addAssignment({ ...assignment, course: courseId }))}>
+          onClick={handleButtonClick}>
           +Assignment
         </button>
 
@@ -50,7 +69,7 @@ function Assignments() {
 
               {courseAssignments.map((assignment) => (
   <div className="container-fluid list-group-item" style={{ width: "100%", marginBottom: "20px" , textDecoration:"none"}}>
-    <Link style={{textDecoration:"none", color:"black"}}
+    <Link style={{textDecoration:"none"}}
       key={assignment._id}
       to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
       
@@ -81,6 +100,3 @@ function Assignments() {
   );
 }
 export default Assignments;
-
-
-
