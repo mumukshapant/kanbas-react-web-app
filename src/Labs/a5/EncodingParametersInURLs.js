@@ -18,18 +18,18 @@ function EncodingParametersInURLs() {
 const [result, setResult] = useState(0);
 const fetchSum = async (a, b) => {
   const response = await
-    axios.get(`http://localhost:4000/a5/add/${a}/${b}`);
+    axios.get(`https://kanbas-node-server-app-lgmb.onrender.com/a5/add/${a}/${b}`);
   setResult(response.data);
 };
 
 const fetchSubtraction = async (a, b) => {
   const response = await axios.get(
-    `http://localhost:4000/a5/subtract/${a}/${b}`);
+    `https://kanbas-node-server-app-lgmb.onrender.com/a5/subtract/${a}/${b}`);
   setResult(response.data);
 };
 
 
-const URL = "http://localhost:4000/a5/assignment";
+const URL = "https://kanbas-node-server-app-lgmb.onrender.com/a5/assignment";
 
 
 
@@ -57,12 +57,12 @@ const URL = "http://localhost:4000/a5/assignment";
      
       <h3>Path Parameters</h3>
       <a
-        href={`http://localhost:4000/a5/add/${a}/${b}`}
+        href={`https://kanbas-node-server-app-lgmb.onrender.com/a5/add/${a}/${b}`}
         className="btn btn-primary">
         Add {a} + {b}
       </a>
       <a
-        href={`http://localhost:4000/a5/subtract/${a}/${b}`}
+        href={`https://kanbas-node-server-app-lgmb.onrender.com/a5/subtract/${a}/${b}`}
         className="btn btn-danger">
         Substract {a} - {b}
       </a>
@@ -74,10 +74,10 @@ const URL = "http://localhost:4000/a5/assignment";
       <br/>
 
 <h3> Query Paramaters</h3>
-<a href= {`http://localhost:4000/a5/calculator/?a=${a}&b=${b}&operation=add`}
+<a href= {`https://kanbas-node-server-app-lgmb.onrender.com/a5/calculator/?a=${a}&b=${b}&operation=add`}
 className="btn btn-danger">Add {a} + {b} </a>
 
-<a href= {`http://localhost:4000/a5/calculator/?a=${a}&b=${b}&operation=subtract`}
+<a href= {`https://kanbas-node-server-app-lgmb.onrender.com/a5/calculator/?a=${a}&b=${b}&operation=subtract`}
 className="btn btn-primary">Subtract {a} - {b} </a>
 <br/>
 <br/>
@@ -90,7 +90,7 @@ className="btn btn-primary">Subtract {a} - {b} </a>
 <h4> Assignments </h4>
 <h3>Working With Objects</h3>
       <h4>Retrieving Objects</h4>
-      <a href="http://localhost:4000/a5/assignment"
+      <a href="https://kanbas-node-server-app-lgmb.onrender.com/a5/assignment"
          className="btn btn-primary me-2">
         Get Assignment
       </a>
@@ -99,7 +99,7 @@ className="btn btn-primary">Subtract {a} - {b} </a>
 
 <h4>Retrieving Properties</h4>
       <a
-        href="http://localhost:4000/a5/assignment/title"
+        href="https://kanbas-node-server-app-lgmb.onrender.com/a5/assignment/title"
         className="btn btn-primary me-2">
         Get Title
       </a>
@@ -126,7 +126,7 @@ className="btn btn-primary">Subtract {a} - {b} </a>
 <h4> EXTRA CREDIT </h4>
 <h6> Get Scores</h6>
 <a
-        href="http://localhost:4000/a5/assignment/score"
+        href="https://kanbas-node-server-app-lgmb.onrender.com/a5/assignment/score"
         className="btn btn-primary me-2">
         Get Scores
       </a>
@@ -152,7 +152,7 @@ className="btn btn-primary">Subtract {a} - {b} </a>
       <h6>Completed</h6>
 
       <a
-        href="http://localhost:4000/a5/assignment/completed"
+        href="https://kanbas-node-server-app-lgmb.onrender.com/a5/assignment/completed"
         className="btn btn-primary me-2">
         Get Completed Status
       </a>
