@@ -10,14 +10,34 @@ import { FaEllipsisV, FaCheckCircle, FaBars, FaEyeSlash } from "react-icons/fa";
 import Modules from "./Modules";
 import { Link } from 'react-router-dom';
 import Grades from './Grades';
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-
-function Courses({ courses }) {
+function Courses() {
   const { courseId } = useParams();
-  const location = useLocation();
-  const pathSegments = location.pathname.split('/').filter(segment => segment !== '');
+  const {pathname} = useLocation();
+  const pathSegments = {pathname}.pathname.split('/').filter(segment => segment !== '');
+  const URL = "https://kanbas-node-server-app-lgmb.onrender.com/api/courses";
+  
 
-  const course = courses.find((course) => course._id === courseId);
+  const [qwe, kanbas, coursesx, id, screen] = pathname.split("/");
+
+  const [course, setCourse] = useState({});
+const findCourseById = async (courseId) => {
+  const response = await axios.get(
+    `${URL}/${courseId}`
+  );
+  setCourse(response.data);
+};
+useEffect(() => {
+  findCourseById(courseId);
+}, [courseId]);
+
+
+//  const course = courses.find((course) => course._id === courseId);
+useEffect(() => {
+  findCourseById(courseId);
+}, [courseId]);
 
   return (
 

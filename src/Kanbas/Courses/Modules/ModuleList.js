@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import './index.css';
 import { useParams } from "react-router-dom";
 import db from "../../Database";
@@ -9,7 +9,9 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules
 } from "./modulesReducer";
+import * as client from "./client";
 
 
 function ModuleList() {
@@ -17,7 +19,34 @@ function ModuleList() {
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+  
   const { courseId } = useParams();
+
+  useEffect(() => {
+    client.findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
+
+  const handleAddModule = () => {
+    client.createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
 
 
 
@@ -61,16 +90,18 @@ function ModuleList() {
         style={{marginBottom:"7px", width:"150px", marginRight:"20px"}}
           onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}
         />
+
         <textarea value={module.description} className="form-control" style={{ width:"750px"}}
         onChange={(e) =>
           dispatch(setModule({ ...module, description: e.target.value }))}
         />
-          <button className="btn btn-danger add"  onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+
+          <button className="btn btn-danger add"  onClick={handleAddModule}>
            + Add
         </button>
 
         <button className="btn btn-primary edit"
-        onClick={() => dispatch(updateModule(module))}>
+        onClick={() =>  handleUpdateModule(module._id)}>
                <FaEdit></FaEdit> Update
         </button>
 
@@ -108,7 +139,7 @@ function ModuleList() {
 
 
         <button className="btn btn-danger"
-              onClick={() => dispatch(deleteModule(module._id))}>
+              onClick={() => handleDeleteModule(module._id)}>
              <FaTrash></FaTrash> Delete
             </button>
            </li>

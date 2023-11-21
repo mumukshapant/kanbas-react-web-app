@@ -1,39 +1,77 @@
-import { Route, Routes, Navigate } from "react-router";
+import {Routes, Route, Navigate } from "react-router";
 import KanbasNavigation from "./KanbasNavigation";
+
 import Courses from "./Courses";
-import Account from "./Account";
 import Dashboard from "./Dashboard";
-import './index.css';
-import db from "./Database";
-import { useState } from "react";
+import Account from "./Account";
+
+import { useEffect, useState } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
+import axios from "axios";
 
 
 
+function Kanbas() {  
+  
+  const URL = "https://kanbas-node-server-app-lgmb.onrender.com/api/courses";
 
-function Kanbas() {  const [courses, setCourses] = useState(db.courses);
+  const [courses, setCourses] = useState([]);
+
+  const addNewCourse = async () => {
+    const response = await axios.post(URL, course);
+    setCourses([
+      response.data,
+      ...courses,
+    ]);
+    setCourse({ name: "" });
+  };
+
+
+  const findAllCourses = async () => {
+    const response = await axios.get(URL);
+    console.log(response)
+    setCourses(response.data);
+  };
+
+  useEffect(() => {
+    findAllCourses();
+  }, []);
+
+
   const [course, setCourse] = useState({
     name: "New Course",      number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15",
   });
-  const addNewCourse = () => {
-    setCourses([...courses, { ...course, _id: new Date().getTime().toString() }]);
+
+
+  const deleteCourse = async (course) => {
+   console.log(course);
+    const response = await axios.delete(
+      `${URL}/${course._id}`
+    );
+    setCourses(courses.filter(
+      (c) => c._id !== course._id));
   };
-  const deleteCourse = (courseId) => {
-    setCourses(courses.filter((course) => course._id !== courseId));
-  };
-  const updateCourse = () => {
+
+
+  const updateCourse = async (course) => {
+    const response = await axios.put(
+      `${URL}/${course._id}`,
+      course
+    );
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
           return course;
-        } else {
-          return c;
         }
+        return c;
       })
     );
+    setCourse({ name: "" });
   };
+
+
 
   return (
     <Provider store={store}>

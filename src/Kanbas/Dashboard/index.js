@@ -1,40 +1,41 @@
 import { React, useState } from "react";
 
 import { Link } from "react-router-dom";
-import db from "../Database";
+// import db from "../Database";
 import "./index.css";
 import dog from "./dog.jpg";
 import "./index.css"; // Import a custom CSS file for Dashboard styling
 
-function Dashboard() {
+function Dashboard( { courses, course, setCourse, addNewCourse,
+  deleteCourse, updateCourse }) {
   
-  const [courses, setCourses] = useState(db.courses);
+  // const [courses, setCourses] = useState([]);
 
-  const [course, setCourse] = useState({
-    name: "New Course",      number: "New Number",
-    startDate: "2023-09-10", endDate: "2023-12-15",
-  });
-  const deleteCourse = (courseId) => {
-    setCourses(courses.filter((course) => course._id !== courseId));
-  };
+  // const [course, setCourse] = useState({
+  //   name: "New Course",      number: "New Number",
+  //   startDate: "2023-09-10", endDate: "2023-12-15",
+  // });
+  // const deleteCourse = (courseId) => {
+  //   setCourses(courses.filter((course) => course._id !== courseId));
+  // };
 
-  const addNewCourse = () => {
-    setCourses([...courses,
-              { ...course,
-                _id: new Date().getTime() }]);
-  };
+  // const addNewCourse = () => {
+  //   setCourses([...courses,
+  //             { ...course,
+  //               _id: new Date().getTime() }]);
+  // };
 
-  const updateCourse = () => {
-    setCourses(
-      courses.map((c) => {
-        if (c._id === course._id) {
-          return course;
-        } else {
-          return c;
-        }
-      })
-    );
-  };
+  // const updateCourse = () => {
+  //   setCourses(
+  //     courses.map((c) => {
+  //       if (c._id === course._id) {
+  //         return course;
+  //       } else {
+  //         return c;
+  //       }
+  //     })
+  //   );
+  // };
 
 
   return (
@@ -58,7 +59,7 @@ function Dashboard() {
       <button className="btn btn-primary " style={{background:"green", marginRight:"10px"}} onClick={addNewCourse} >
        + Add New Course
       </button>
-      <button className="btn btn-primary " onClick={updateCourse} >
+      <button className="btn btn-primary " onClick={()=>updateCourse(course)} >
         Update
       </button>
       </div>
@@ -102,7 +103,7 @@ function Dashboard() {
                   <button className="btn btn-danger" style={{marginLeft:"10px"}}
               onClick={(event) => {
                 event.preventDefault();
-                deleteCourse(course._id);
+                deleteCourse(course);
               }}>
               Delete
             </button>
@@ -118,3 +119,4 @@ function Dashboard() {
 }
 
 export default Dashboard;
+
