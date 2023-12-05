@@ -1,5 +1,4 @@
 import Home from "../project/home";
-import Signin from "../project/users/signin.js";
 import Signup from "../project/users/signup.js";
 import Account from "../project/users/account.js";
 import Admin from "../project/users/admin.js";
@@ -26,12 +25,9 @@ function Project() {
             <Route path="/admin/users" element={<UserTable />} />
             <Route path="/" element={<Navigate to="/project/home" />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/signin" element={<Signin />} />
             <Route path="/courses" element={<CourseList />} />
             <Route path="/courses/:cid" element={<CourseDetails />} />
             <Route path="/search" element={<Search />} />
-            <Route path="/search/:search" element={<Search />} />
             <Route path="/details/:id" element={<Details />} />
           </Routes>
         </div>

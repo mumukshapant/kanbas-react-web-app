@@ -29,7 +29,7 @@ function Project() {
             <Route path="/" element={<Navigate to="/project/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/signin" element={<Signin/>} />
+            <Route path="/signin" element={<Signin />} />
             <Route path="/courses" element={<CourseList />} />
             <Route path="/courses/:cid" element={<CourseDetails />} />
             <Route path="/search" element={<Search />} />

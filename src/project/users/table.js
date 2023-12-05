@@ -3,6 +3,7 @@ import {
     BsTrash3Fill, BsFillCheckCircleFill,
     BsPencil, BsPlusCircleFill,
   } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import * as client from "./client";
 
 function UserTable() {
@@ -16,6 +17,7 @@ function UserTable() {
       console.log(err);
     }
   };
+
   const selectUser = async (user) => {
     try {
       const u = await client.findUserById(user._id);
@@ -32,6 +34,7 @@ function UserTable() {
       console.log(err);
     }
   };
+
   const deleteUser = async (user) => {
     try {
       await client.deleteUser(user);
@@ -82,19 +85,25 @@ function UserTable() {
                 className="text-success fs-1 text" />
             </td>
           </tr>
-        </thead>
+        </thead> 
         <tbody>
           {users.map((user) => (
             <tr key={user._id}>
-              <td>{user.username}</td>
+                <td>
+                    <Link to={`/project/account/${user._id}`}>
+                    {user.username}
+                    </Link>
+                </td>
               <td>{user.firstName}</td>
               <td>{user.lastName}</td>
               <td className="text-nowrap">
                 <button className="btn btn-danger me-2">
                 <BsTrash3Fill onClick={() => deleteUser(user)} />
                 </button>
+
                 <button className="btn btn-warning me-2">
                 <BsPencil onClick={() => selectUser(user)} />
+
                 </button>
             </td>
             </tr>))}
