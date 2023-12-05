@@ -1,6 +1,5 @@
 // import { Route, Routes, Link, useLocation, Navigate } from "react-router-dom";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Assignment3 from "./a3";
 import Assignment4 from "./a4";
 import Assignment5 from "./a5";
 import store from "./store";
