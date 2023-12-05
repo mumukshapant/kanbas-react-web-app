@@ -1,15 +1,17 @@
-import Home from "../project/home";
-import Signin from "../project/users/signin.js";
-import Signup from "../project/users/signup.js";
-import Account from "../project/users/account.js";
-import Admin from "../project/users/admin.js";
-import Search from "../project/search.js";
-import Details from "../project/details.js";
-import UserTable from "../project/users/table.js";
-import CourseList from "../project/courses/list.js";
-import CourseDetails from "../project/courses/details.js";
+import Home from "./home";
+
+import Signin from "./users/signin";
+import Signup from "./users/signup";
+import Account from "./users/account";
+import Admin from "./users/admin";
+
+import Search from "./search";
+import Details from "./details";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Nav from "../project/nav.js";
+import Nav from "./nav";
+import UserTable from "./users/table";
+import CourseList from "./courses/list";
+import CourseDetails from "./courses/details";
 
 function Project() {
   return (
@@ -27,7 +29,7 @@ function Project() {
             <Route path="/" element={<Navigate to="/project/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/signin" element={<Signin />} />
+            <Route path="/signin" element={<Signin/>} />
             <Route path="/courses" element={<CourseList />} />
             <Route path="/courses/:cid" element={<CourseDetails />} />
             <Route path="/search" element={<Search />} />
